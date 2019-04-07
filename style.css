@@ -6,4 +6,12 @@ h1, h2, h3, h4, h5, h6 {
 
 header, section {
     margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+footer { padding: 4rem 2rem;}
+
+.column.toast {
+    width: 100%;
+    padding: 2rem 1rem;
 }

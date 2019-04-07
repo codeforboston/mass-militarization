@@ -9,17 +9,21 @@
     <meta name="author" content="name">
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here">
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.min.js"></script>
+    <script src="app.js"></script>
+
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Exo" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-    
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
-    <main>
         <header class="hero hero-sm bg-primary">
             <div class="hero-body">
                 <h1>Massachusetts Militarization</h1>
@@ -27,129 +31,121 @@
             </div>
         </header>
 
-        <section class="container">
-            <h2>MPM Data Table <small class="label">2013-2018</small></h2>
+        <main class="container">
+            <section class="columns">
+                <div class="column col-9">
+                    <h2>Infused Weapons by County <small class="label">2006-2014</small></h2>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title h5">Example graph</div>
+                            <div class="card-subtitle text-gray">Example</div>
+                        </div>
+                        <div class="card-body">
+                            <!-- copy and paste. Modify height and width if desired. --> <a href="https://content.screencast.com/users/Jona_R/folders/Jing/media/3f9d0a43-6b97-489d-999e-0ab649fad9d1/00000422.png"><img class="embeddedObject" src="https://content.screencast.com/users/Jona_R/folders/Jing/media/3f9d0a43-6b97-489d-999e-0ab649fad9d1/00000422.png" width="959" height="557" border="0" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column toast">
+                    <p>About this data</p>
+                </div>
+            </section>
+
+            <section class="columns">
+                <div class="column col-9">
+                    <h2>Outcomes <small class="label">2013-2018</small></h2>
+                
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title h5">Traffic Stops</div>
+                            <div class="card-subtitle text-gray">By gender and race</div>
+                        </div>
+                        <div class="card-body">
+                            <!-- copy and paste. Modify height and width if desired. --> <a
+                                href="https://content.screencast.com/users/Jona_R/folders/Jing/media/4449f77b-c1db-4617-b3fe-1c66172cb5c2/00000408.png"><img
+                                    class="embeddedObject"
+                                    src="https://content.screencast.com/users/Jona_R/folders/Jing/media/4449f77b-c1db-4617-b3fe-1c66172cb5c2/00000408.png"
+                                    width="711" height="432" border="0" /></a>
+
+                            <!-- copy and paste. Modify height and width if desired. --> <a
+                                href="https://content.screencast.com/users/Jona_R/folders/Jing/media/3e2217e2-a31f-4bf8-a76e-140d15d71485/00000409.png"><img
+                                    class="embeddedObject"
+                                    src="https://content.screencast.com/users/Jona_R/folders/Jing/media/3e2217e2-a31f-4bf8-a76e-140d15d71485/00000409.png"
+                                    width="722" height="429" border="0" /></a>
+
+                            <!-- copy and paste. Modify height and width if desired. --> <a href="https://content.screencast.com/users/Jona_R/folders/Jing/media/3fcf38d5-d2fc-4180-824d-9d5a436a9bff/00000421.png"><img class="embeddedObject" src="https://content.screencast.com/users/Jona_R/folders/Jing/media/3fcf38d5-d2fc-4180-824d-9d5a436a9bff/00000421.png" width="801" height="465" border="0" /></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title h5">Arrests</div>
+                            <div class="card-subtitle text-gray">By gender and race</div>
+                        </div>
+                        <div class="card-body">
+                            <!-- copy and paste. Modify height and width if desired. --> <a href="https://content.screencast.com/users/Jona_R/folders/Jing/media/4cbe7b53-28f0-4bff-b0e0-333ce3507b88/00000418.png"><img class="embeddedObject" src="https://content.screencast.com/users/Jona_R/folders/Jing/media/4cbe7b53-28f0-4bff-b0e0-333ce3507b88/00000418.png" width="971" height="539" border="0" /></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title h5">Over time</div>
+                            <div class="card-subtitle text-gray">All outcomes</div>
+                        </div>
+                        <div class="card-body">
+                            <!-- copy and paste. Modify height and width if desired. --> <a
+                                href="https://content.screencast.com/users/Jona_R/folders/Jing/media/eeed86a9-a383-4ea6-b98d-a90c89c1bb9b/00000412.png"><img
+                                    class="embeddedObject"
+                                    src="https://content.screencast.com/users/Jona_R/folders/Jing/media/eeed86a9-a383-4ea6-b98d-a90c89c1bb9b/00000412.png"
+                                    width="1386" height="382" border="0" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column toast">
+                    <p>About this data</p>
+                </div>
+            </section>
+
+            <section class="columns">
+                <div class="column col-9">
+                    <h2>Sources</h2>
+                
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title h5">MPM</div>
+                            <div class="card-subtitle text-gray">2006-2014</div>
+                        </div>
+                        <div class="card-body">
+                            <table id="mpmTable">
+                                <thead>
+                                    <tr><th scope="col">County</th><th scope="col">Year</th><th scope="col">Category</th><th scope="col">Quantity</th><th scope="col">Total Cost</th></tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title h5">TSOPP</div>
+                            <div class="card-subtitle text-gray">2006-2014</div>
+                        </div>
+                        <div class="card-body">
+                            Table coming soon!
+                        </div>
+                    </div>
+                </div>
+                <div class="column toast">
+                    <p>About this data</p>
+                </div>
+            </section>
+        </main>
         
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title h5">Table</div>
-                    <div class="card-subtitle text-gray">Example</div>
-                </div>
-                <div class="card-body">
-                    <table id="mpmTable">
-                        <thead>
-                            <tr>
-                                <th scope="col">County</th>
-                                <th scope="col">Year</th>
-                                <th scope="col">Category</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Total Cost</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary">Example control</button>
-                </div>
-            </div>
-        </section>
-        
-        <section class="container">
-            <h2>Federal Supplies <small class="label">2013-2018</small></h2>
-
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title h5">Example graph</div>
-                    <div class="card-subtitle text-gray">Example</div>
-                </div>
-                <div class="card-body">
-                    <!-- copy and paste. Modify height and width if desired. --> <a
-                        href="https://content.screencast.com/users/Jona_R/folders/Jing/media/49a37a8f-eb0e-42bb-b654-fccacd9a9351/00000415.png"><img
-                            class="embeddedObject"
-                            src="https://content.screencast.com/users/Jona_R/folders/Jing/media/49a37a8f-eb0e-42bb-b654-fccacd9a9351/00000415.png"
-                            width="982" height="585" border="0" /></a>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary">Example control</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="container">
-            <h2>Outcomes <small class="label">2013-2018</small></h2>
-        
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title h5">Traffic Stops</div>
-                    <div class="card-subtitle text-gray">By gender and race</div>
-                </div>
-                <div class="card-body">
-                    <!-- copy and paste. Modify height and width if desired. --> <a
-                        href="https://content.screencast.com/users/Jona_R/folders/Jing/media/4449f77b-c1db-4617-b3fe-1c66172cb5c2/00000408.png"><img
-                            class="embeddedObject"
-                            src="https://content.screencast.com/users/Jona_R/folders/Jing/media/4449f77b-c1db-4617-b3fe-1c66172cb5c2/00000408.png"
-                            width="711" height="432" border="0" /></a>
-
-                    <!-- copy and paste. Modify height and width if desired. --> <a
-                        href="https://content.screencast.com/users/Jona_R/folders/Jing/media/3e2217e2-a31f-4bf8-a76e-140d15d71485/00000409.png"><img
-                            class="embeddedObject"
-                            src="https://content.screencast.com/users/Jona_R/folders/Jing/media/3e2217e2-a31f-4bf8-a76e-140d15d71485/00000409.png"
-                            width="722" height="429" border="0" /></a>
-
-                    <!-- copy and paste. Modify height and width if desired. --> <a
-                        href="https://content.screencast.com/users/Jona_R/folders/Jing/media/1731d8b6-bc7d-459f-9a3d-e2f5bec2d960/00000416.png"><img
-                            class="embeddedObject"
-                            src="https://content.screencast.com/users/Jona_R/folders/Jing/media/1731d8b6-bc7d-459f-9a3d-e2f5bec2d960/00000416.png"
-                            width="753" height="445" border="0" /></a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title h5">Arrests</div>
-                    <div class="card-subtitle text-gray">By gender and race</div>
-                </div>
-                <div class="card-body">
-                    <!-- copy and paste. Modify height and width if desired. --> <a
-                        href="https://content.screencast.com/users/Jona_R/folders/Jing/media/f1891e43-1c7f-48a6-8722-0263fb516bc0/00000411.png"><img
-                            class="embeddedObject"
-                            src="https://content.screencast.com/users/Jona_R/folders/Jing/media/f1891e43-1c7f-48a6-8722-0263fb516bc0/00000411.png"
-                            width="1270" height="421" border="0" /></a>
-
-                    <!-- copy and paste. Modify height and width if desired. --> <a
-                        href="https://content.screencast.com/users/Jona_R/folders/Jing/media/55bec3cb-07d1-46ff-b82e-91666621acf3/00000417.png"><img
-                            class="embeddedObject"
-                            src="https://content.screencast.com/users/Jona_R/folders/Jing/media/55bec3cb-07d1-46ff-b82e-91666621acf3/00000417.png"
-                            width="753" height="491" border="0" /></a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-title h5">Over time</div>
-                    <div class="card-subtitle text-gray">All outcomes</div>
-                </div>
-                <div class="card-body">
-                    <!-- copy and paste. Modify height and width if desired. --> <a
-                        href="https://content.screencast.com/users/Jona_R/folders/Jing/media/eeed86a9-a383-4ea6-b98d-a90c89c1bb9b/00000412.png"><img
-                            class="embeddedObject"
-                            src="https://content.screencast.com/users/Jona_R/folders/Jing/media/eeed86a9-a383-4ea6-b98d-a90c89c1bb9b/00000412.png"
-                            width="1386" height="382" border="0" /></a>
-                </div>
-            </div>
-        </section>
 
         <footer class="hero hero-sm bg-dark">
             <div class="hero-body">
                 <p>Made at the <a href="https://www.codeforboston.org/">Code for Boston</a> Spring 2019 Hackathon.</p>
             </div>
         </footer>
-    </main>
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.min.js"></script>
-    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script src="app.js"></script>
+
 </body>
 
 </html>

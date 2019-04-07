@@ -1,18 +1,17 @@
 $(document).ready(function() {
     
     // download data
-    // d3.csv("data/mpm_data.csv").then(function(data) {
     d3.csv("data/mpm_data.csv").then(function(data) {
         // console.log(data);
 
-        var mpmCountyYear = d3.nest()
-            .key(function (d) { return d.county; }).sortKeys(d3.ascending)
-            .key(function (d) { return d.year; }).sortKeys(d3.ascending)
-            .entries(data);
+        // var mpmCountyYear = d3.nest()
+        //     .key(function (d) { return d.county; }).sortKeys(d3.ascending)
+        //     .key(function (d) { return d.year; }).sortKeys(d3.ascending)
+        //     .entries(data);
 
-        console.log(mpmCountyYear)
-        console.table(data[0])
-
+        // console.log(mpmCountyYear)
+        // console.table(data[0])
+        // state, county, quantity, total_cost, year, ship_date, federal_supply_category_name, recode
         $('#mpmTable').DataTable({
             data: data,
             "columns": [
@@ -23,6 +22,8 @@ $(document).ready(function() {
                 { "data": "total_cost" },
             ]
         });
+
+        
     });
 
     
