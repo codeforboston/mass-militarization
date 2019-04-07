@@ -26,5 +26,20 @@ $(document).ready(function() {
         
     });
 
+    d3.csv("data/MA_ACLU_edited.csv").then(function (data2) {
+        $('#acluTable').DataTable({
+            data: data2,
+            columns: [
+                { "data": "County" },
+                { "data": "Arrest Date" },
+                { "data": "Arrestee Offense" },
+                { "data": "Arrestee Race" },
+                { "data": "Arrestee Ethnicity" }
+            ]
+        });
+
+
+    });
+
     
 });
